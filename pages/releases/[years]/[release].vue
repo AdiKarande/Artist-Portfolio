@@ -8,9 +8,7 @@ definePageMeta({ layout: "site" });
       <h4 class="font-weight-light mb-0">{{ release.artists }}</h4>
       <div id="reproductor" class="me-5 ms-5 px-5" data-aos="fade-in" data-aos-easing="ease-in-sine">
         <div class="text-center py-3">
-          <div class="video-container">
-            <iframe width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${release.video}`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-          </div>
+         
         </div>
       </div>
       <div id="track-info" class="row mt-4 mb-4 pt-3 bg-dark">
