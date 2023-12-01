@@ -1,39 +1,15 @@
 <template>
-  <footer id="contact" class="page-footer bg-darkest text-white text-left font-weight-light">
+ 
+  <footer id="contact" class="page-footer bg-darkest text-white text-center font-weight-light">
+
     <div class="container py-4">
       <div class="row">
-        <div class="col-md-4">
-          <h4>Stream Music</h4>
-          <ul class="alt">
-            <li><a target="_blank" :href="SITE.platforms.spotify">Spotify</a></li>
-            <li><a target="_blank" :href="SITE.platforms.soundcloud">SoundCloud</a></li>
-            <li><a target="_blank" :href="SITE.platforms.youtube">YouTube</a></li>
-            <li><a target="_blank" :href="SITE.platforms.apple">Apple Music</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Buy Music</h4>
-          <ul class="alt">
-            <li>
-              <a target="_blank" :href="SITE.platforms.itunes">iTunes</a>
-            </li>
-            <li>
-              <a target="_blank" :href="SITE.platforms.beatport">Beatport</a>
-            </li>
-            <li>
-              <a target="_blank" :href="SITE.platforms.amazon">Amazon</a>
-            </li>
-            <li>
-              <a target="_blank" :href="SITE.platforms.bandcamp">Bandcamp</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
+        
+        
+        <div>
           <h4>Contact</h4>
           <ul class="icons mb-0">
-            <li class="spotify">
-              <a :href="SITE.platforms.spotify" target="_blank"><Icon class="" name="simple-icons:spotify" /></a>
-            </li>
+           
             <li class="soundcloud">
               <a :href="SITE.platforms.soundcloud" target="_blank"><Icon class="" name="simple-icons:soundcloud" /></a>
             </li>
@@ -52,12 +28,12 @@
           </ul>
           <ul class="contact">
             <li>
-              <span class="ml-2">Email: </span><a class="mx-0" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a>
+              <span class="ml-2">Email: </span><a class="mx-0" href="mailto:connect@auroradigisol.com" target="_blank">connect@auroradigisol.com</a>
             </li>
           </ul>
         </div>
         <div class="col-md-12 text-center mt-4 text-small">
-          <p class="mb-0">© Bayza. All rights reserved.</p>
+          <p class="mb-0">© 2023 auroa digital solutions pvt. ltd. All rights reserved.</p>
         </div>
       </div>
     </div>
