@@ -8,24 +8,7 @@
         
         <div>
           <h4>Contact</h4>
-          <ul class="icons mb-0">
-           
-            <li class="soundcloud">
-              <a :href="SITE.platforms.soundcloud" target="_blank"><Icon class="" name="simple-icons:soundcloud" /></a>
-            </li>
-            <li class="youtube">
-              <a :href="SITE.platforms.youtube" target="_blank"><Icon class="" name="simple-icons:youtube" /></a>
-            </li>
-            <li class="instagram">
-              <a :href="SITE.socials.instagram" target="_blank"><Icon class="" name="simple-icons:instagram" /></a>
-            </li>
-            <li class="facebook">
-              <a :href="SITE.socials.facebook" target="_blank"><Icon class="" name="simple-icons:facebook" /></a>
-            </li>
-            <li class="twitter">
-              <a :href="SITE.socials.twitter" target="_blank"><Icon class="" name="simple-icons:twitter" /></a>
-            </li>
-          </ul>
+          
           <ul class="contact">
             <li>
               <span class="ml-2">Email: </span><a class="mx-0" href="mailto:connect@auroradigisol.com" target="_blank">connect@auroradigisol.com</a>

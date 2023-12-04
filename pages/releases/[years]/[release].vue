@@ -17,18 +17,10 @@ definePageMeta({ layout: "site" });
         </div>
         <div class="track-info-tags col-12 col-lg-7 meta text-justify px-3">
           <div class="tags">
-            <h5 v-if="release.description" class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
-            <h6 class="mb-2"><span class="">{{ release.description }}</span></h6>
-            <h5 v-if="release.genre" class="mb-0"><span class="meta-heading mb-0 text-white">Genre:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.genre }}</span></h6>
-            <h5 v-if="release.album" class="mb-0"><span class="meta-heading mb-0 text-white">Album:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.album }}</span></h6>
-            <h5 v-if="release.label" class="mb-0"><span class="meta-heading mb-0 text-white">Label:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.label }}</span></h6>
+           
             <h5 v-if="release.date" class="mb-0"><span class="meta-heading mb-0 text-white">Release date:</span></h5>
             <h6 class="mb-2"><span class="tag">{{ dateFormat(release.date) }}</span></h6>
-            <h5 v-if="release.duration" class="mb-0"><span class="meta-heading mb-0 text-white">Duration:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>
+            
             
             
             <div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left">
@@ -47,7 +39,7 @@ definePageMeta({ layout: "site" });
       <div style="border-top: 2px solid #bbbbbb; width: 30%;" />
       <div id="more_tracks" class="pt-4 text-start">
         <div id="more_releases" class="pb-4">
-          <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${type(release.type).type_page}`">{{ type(release.type).release_type }}</a> by Bayza</h4>
+          <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${type(release.type).type_page}`">{{ type(release.type).release_type }}</a> by Advait</h4>
         </div>
         <div class="row">
           <div v-for="(item, index) of moreTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
