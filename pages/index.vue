@@ -77,8 +77,7 @@ definePageMeta({ layout: "site" });
     <div class="container" style="overflow-x: hidden;">
       <h3 class="mt-3 text-uppercase text-white">About</h3>
       <div id="about-desc" class="row, text-left">
-        Advait, a 10-year-old artist from Solapur, Maharashtra, began his artistic journey in 2019. He started by creating vibrant and colorful drawings, exploring different styles and techniques.
-        Advait has gained recognition and signed collaborations with several art collectives and galleries, including "Artistic Expressions Collective," "Colorful Creations Gallery," "Doodlemania Studios," "Sketch Haven," "Imagination Artworks," "Creative Canvas Co-op," "Artistic Vibes Syndicate," "Whimsical Wonders Gallery," "Expressive Artisans Guild," and "Illustration Junction." Keep an eye out for Advait's upcoming series, promising even more creativity and innovation in the world of drawings!
+      Advait, a 10-year-old artist from Solapur, Maharashtra, began his artistic journey in 2018. He started by creating vibrant and colorful drawings, exploring different styles and techniques. At the age of 5 years organized his canvas and poster painting exhibition in the Solapur city. Advait has gained recognition and signed collaborations with several art collectives and galleries, including "Artistic Expressions Collective," "Colorful Creations Gallery," "Doodlemania Studios," "Sketch Haven," "Imagination Artworks," "Creative Canvas Co-op," "Artistic Vibes Syndicate," "Whimsical Wonders Gallery," "Expressive Artisans Guild," and "Illustration Junction." Keep an eye out for Advait's upcoming series, promising even more creativity and innovation in the world of drawings!
         <div class=" text-center"><img id="covers" class="img-fluid shadow" src="/images/bayza-about.jpg" data-aos="fade-left" data-aos-easing="ease-in-sine"></div>
       </div>
     </div>
