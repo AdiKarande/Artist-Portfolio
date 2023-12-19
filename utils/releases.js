@@ -279,7 +279,7 @@ export const tracks = [
     "album": "",
     "fanlink": "lnk.bayzamusic.com/Obsession",
     "description": null,
-    "title": "Balganesh",
+    "title": "shri Swami Samarth",
     "type": "Drawing",
     "artists": "Advait",
     "cover": "obsession",
@@ -287,7 +287,7 @@ export const tracks = [
     // "duration": "2:45",
     // "video": "KNmD8d2bnp0",
     "year": 2023,
-    "date": "2023-09-8 00:00:00",
+    "date": "2023-12-18 00:00:00",
     "release": "obsession",
     // "genre": "Deep House"
   }

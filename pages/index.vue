@@ -49,7 +49,7 @@ definePageMeta({ layout: "site" });
                   <small><h5>September 8, 2023</h5></small>
                 </div>
               </div>
-              <h5 class="mb-0"><small><p class="mb-0 mt-2">Balganesh</p></small></h5>
+              <h5 class="mb-0"><small><p class="mb-0 mt-2">shri Swami Samarth</p></small></h5>
               <small><p class="mb-4">Advait</p></small>
             </div>
           </div>
