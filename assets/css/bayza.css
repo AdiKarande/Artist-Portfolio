@@ -441,6 +441,7 @@ b a:hover, b NuxtLink:hover {
 
     #about-desc {
         font-size: 0.80em;
+        align-content: center;
     }
 }
 

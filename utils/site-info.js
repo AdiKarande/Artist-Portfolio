@@ -1,9 +1,9 @@
 const SITE = {
   name: "Advait",
-  domain: "bayzamusic.com",
+  domain: "Advait.com",
   person: {
-    fullname: "Ahmed Rangel",
-    birthdate: "1998-06-15",
+    fullname: "Advait Dhulap",
+    birthdate: "2014-06-15",
     country: {
       id: "https://musicbrainz.org/area/6f85633b-dff4-3fb4-babd-fb89b3628041",
       name: "Panama"

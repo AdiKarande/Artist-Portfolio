@@ -8,9 +8,7 @@ definePageMeta({ layout: "site" });
       <h4 class="font-weight-light mb-0">{{ release.artists }}</h4>
       <div id="reproductor" class="me-5 ms-5 px-5" data-aos="fade-in" data-aos-easing="ease-in-sine">
         <div class="text-center py-3">
-          <div class="video-container">
-            <iframe width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${release.video}`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-          </div>
+         
         </div>
       </div>
       <div id="track-info" class="row mt-4 mb-4 pt-3 bg-dark">
@@ -19,18 +17,10 @@ definePageMeta({ layout: "site" });
         </div>
         <div class="track-info-tags col-12 col-lg-7 meta text-justify px-3">
           <div class="tags">
-            <h5 v-if="release.description" class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
-            <h6 class="mb-2"><span class="">{{ release.description }}</span></h6>
-            <h5 v-if="release.genre" class="mb-0"><span class="meta-heading mb-0 text-white">Genre:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.genre }}</span></h6>
-            <h5 v-if="release.album" class="mb-0"><span class="meta-heading mb-0 text-white">Album:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.album }}</span></h6>
-            <h5 v-if="release.label" class="mb-0"><span class="meta-heading mb-0 text-white">Label:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.label }}</span></h6>
+           
             <h5 v-if="release.date" class="mb-0"><span class="meta-heading mb-0 text-white">Release date:</span></h5>
             <h6 class="mb-2"><span class="tag">{{ dateFormat(release.date) }}</span></h6>
-            <h5 v-if="release.duration" class="mb-0"><span class="meta-heading mb-0 text-white">Duration:</span></h5>
-            <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>
+            
             
             
             <div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left">
@@ -49,7 +39,7 @@ definePageMeta({ layout: "site" });
       <div style="border-top: 2px solid #bbbbbb; width: 30%;" />
       <div id="more_tracks" class="pt-4 text-start">
         <div id="more_releases" class="pb-4">
-          <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${type(release.type).type_page}`">{{ type(release.type).release_type }}</a> by Bayza</h4>
+          <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${type(release.type).type_page}`">{{ type(release.type).release_type }}</a> by Advait</h4>
         </div>
         <div class="row">
           <div v-for="(item, index) of moreTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
@@ -168,103 +158,7 @@ export default {
         }).sort((a, b) => new Date(b.date) - new Date(a.date));
       }
     },
-    async platforms () {
-      const response = await fetch("/data/fanlinks.json");
-      const data = await response.json();
-      const str = this.paramRelease;
-      let release_str;
-      let store_title;
-      let icon = "";
-      let icon_insert = "";
-      const stores_array = [];
-      let key = 0;
-      if (str == "lo-vas-a-olvidar") {
-        release_str = "lvao";
-      } else if (str == "everythingiwanted") {
-        release_str = "everything-i-wanted";
-      } else if (str == "desert-rose-enta-omri") {
-        release_str = "desert-rose";
-      } else if (str == "my-head-my-heart" || str == "without-you" || str == "no-guarantee" || str == "hold-on-to-me" || str == "make-believe" || str == "not-my-baby" || str == "still-learning" || str == "strawberry-shortcake") {
-        release_str = str;
-      } else {
-        release_str = str.replace(/-/g, "");
-      }
-      Object.entries(data[release_str]).forEach(([i, stores]) => {
-        if (stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" &&
-          i !== "image_secure" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download") {
-          icon = "" + i;
-          icon_insert = "";
-          store_title = "";
-          if (i === "itunes") {
-            store_title = "iTunes Store";
-            icon = "ic:sharp-star-rate";
-          } else if (i === "beatport") {
-            store_title = "Beatport";
-            icon = "simple-icons:beatport";
-          } else if (i === "spotify") {
-            store_title = "Spotify";
-            icon = "simple-icons:spotify";
-          } else if (i === "apple") {
-            store_title = "Apple Music";
-            icon = "simple-icons:apple";
-          } else if (i === "soundcloud") {
-            store_title = "SoundCloud";
-            icon = "simple-icons:soundcloud";
-          } else if (i === "youtube") {
-            store_title = "YouTube";
-            icon = "simple-icons:youtube";
-          } else if (i === "amazon") {
-            store_title = "Amazon";
-            icon = "simple-icons:amazon";
-          } else if (i === "deezer") {
-            store_title = "Deezer";
-            icon = "simple-icons:deezer";
-          } else if (i === "napster") {
-            store_title = "Napster";
-            icon = "fa6-brands:napster";
-          } else if (i === "tiktok") {
-            store_title = "TikTok";
-            icon = "simple-icons:tiktok";
-          } else if (i === "yandex") {
-            store_title = "Yandex Music";
-            icon = "fa6-brands:yandex";
-          } else if (i === "bandcamp") {
-            store_title = "Bandcamp";
-            icon = "simple-icons:bandcamp";
-          } else if (i === "tidal") {
-            store_title = "Tidal";
-            icon = "simple-icons:tidal";
-          } else if (i === "anghami") {
-            store_title = "Anghami";
-            icon_insert = "<span class=\"fab fa-anghami fa-fw\" aria-hidden=\"true\"><img src=\"/images/anghami-logo.svg\"></span>";
-            icon = "";
-          } else if (i === "vk") {
-            store_title = "VKontakte";
-            icon = "simple-icons:vk";
-          } else {
-            icon = "";
-            icon_insert = "";
-          }
-          stores_array.push({
-            id: i,
-            store_title: store_title,
-            stores: stores,
-            icon: icon,
-            key: key,
-            icon_insert: icon_insert,
-          });
-          key = key + 1;
-          icon_insert = "";
-        }
-      });
-      const stores_order = ["spotify","apple","soundcloud","youtube","deezer","beatport","itunes","yandex","vk","anghami","amazon","tidal","napster","tiktok","bandcamp"];
-      const sortedObj = stores_array.sort((a, b) => {
-        return (
-          stores_order.indexOf(a.id) - stores_order.indexOf(b.id)
-        );
-      });
-      return sortedObj;
-    }
+   
   }
 };
 </script>
